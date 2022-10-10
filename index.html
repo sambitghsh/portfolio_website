@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
 </head>
 
 <body>
@@ -47,6 +47,9 @@
               <heading>Research</heading>
               <p>
                 I'm broadly interested in deep learning for audio and speech processing, and explainable AI. Check out my publications for further details.
+              </p>
+              <p>
+                The <a href="https://coswara.iisc.ac.in/">COSWARA web application</a> can now generate COVID-19 probability of a subject in few seconds.
               </p>
             </td>
           </tr>
@@ -95,7 +98,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Achievements</heading>
               <p>
-                <b>Oct 2022:</b> Awarded IEEE-HKN Mu Xi through IEEE-IISc student branch.
+                <b>Oct 2022:</b> Was awarded IEEE-HKN Mu Xi through IEEE-IISc student branch.
               </p>
               <p>
                 <b>July 2022:</b> Received ISCA travel grant to attend INTERSPEECH 2022 in South Korea.
@@ -117,7 +120,47 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading>
               <p>
-                [will be updated soon]
+                <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='malle_image'>
+                        <img src='images/photo-website.png' width="160"></div>
+                      <img src='images/photo-website.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function malle_start() {
+                        document.getElementById('malle_image').style.opacity = "1";
+                      }
+      
+                      function malle_stop() {
+                        document.getElementById('malle_image').style.opacity = "0";
+                      }
+                      malle_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://yifanjiang.net/MalleConv.html">
+                      <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
+                    </a>
+                    <br>
+                    <a href="https://yifanjiang.net/">Yifan Jiang</a>,
+                    <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
+                    <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
+                    <strong>Jonathan T. Barron</strong>,
+                    <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
+                    <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
+                    <br>
+                    <em>ECCV</em>, 2022
+                    <br>
+                    <a href="https://yifanjiang.net/MalleConv.html">project page</a>
+                    /
+                    <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
+                    <p></p>
+                    <p>
+                    We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
+                    </p>
+                  </td>
+                </tr>
               </p>
             </td>
           </tr>
